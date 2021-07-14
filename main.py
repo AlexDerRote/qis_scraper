@@ -18,7 +18,7 @@ def main():
         errorcode = "NONE"
         time = datetime.now()
         print(f"Zeitstempel: {time}")
-        if time.hour >= 8 and time.hour <= 20: #QIS-Scraper wird nur waehrend der Oeffnungszeiten des PA gestartet
+        if time.hour >= 8 and time.hour <= 17: #QIS-Scraper wird nur waehrend der Oeffnungszeiten des PA gestartet
             try:
                 scraper = qis()
                 offene_klausuren, rows = scraper.check_klausuren(username=username, password=password)
