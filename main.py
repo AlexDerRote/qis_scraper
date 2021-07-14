@@ -65,13 +65,13 @@ def check_open_exams(offene_klausuren, offene_klausuren_saved, old_table, new_ta
 Subject: QIS Scraper gestartet
 
 Diese Nachricht wurde automatisch generiert."""
-            #send_mail(message)
+            send_mail(message)
         else:
             message = """\
             Subject: NEUE KLAUSURERGEBNISSE VEROEFFENTLICHT!
 
             Im QIS wurden neue Klausurergebnisse hinterlegt."""
-            #send_mail(message)
+            send_mail(message)
             print("neue Klausurergebnisse online")
     else:
         print("keine neuen Prüfungsergebnisse")
